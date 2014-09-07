@@ -1,0 +1,75 @@
+
+body{
+  background-image: url(image-path('UC Berkeley.png'));
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 0 0 ;
+  background-size: 100%;
+
+  
+}
+div.intro-message{
+  color: #ffffff;
+}
+
+#formTitle{
+  text-align: center;
+}
+#createMealPlanForm{
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: darkgrey;
+  opacity: 0.9;
+  background-position: center;
+  filter: alpha(opacity=90);
+  height: 800px;
+  overflow: auto;
+}
+
+#venueOptions{
+  padding-left: 100px;
+}
+#homeTitle{
+  color: #FFCC00;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 200px;
+  font-weight: bold;
+  letter-spacing: -7px;
+  line-height: 1;
+}
+
+#headerLinks{
+  color: #FFCC00;
+}
+#tagline{
+  background-color: #FFCC00;
+  color: #000000;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif; font-size: 30px; font-weight: 300; line-height: 32px; margin: 0 0 72px; text-align: center;
+}
+
+#logo {
+  float: left;
+  font-size: 1.7em;
+  color: #FFCC00;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  font-weight: bold;
+  line-height: 2;
+  &:hover {
+    color: #000;
+    text-decoration: none;
+  }
+}
+
+#footerTitle{
+  color: #FFCC00;
+  padding-left: 20px;
+}
+
+.intro-header{
+  padding-top: 10%;
+  text-align: center;
+}
