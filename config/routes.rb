@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
   root 'pages#home'
   match '/create',            to: 'pages#createMealPlan', via: 'get'
-
+  match '/create/monday',     to: 'pages#monday', via: 'get'
+  match '/create/tuesday',     to: 'pages#tuesday', via: 'get'
+  match '/create/wednesday',     to: 'pages#wednesday', via: 'get'
+  match '/create/thursday',     to: 'pages#thursday', via: 'get'
+  match '/create/friday',     to: 'pages#friday', via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

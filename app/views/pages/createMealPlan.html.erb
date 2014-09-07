@@ -5,37 +5,16 @@
     <!-- Form Name -->
     <legend> <h1 id="formTitle"> Weekly Menu </h1></legend>
     <div class="text-center">
-    <div class="btn-group btn-group-lg" id="weekCal">
-      <button type="button" class="btn btn-default">Monday</button>
-      <button type="button" class="btn btn-default">Tuesday</button>
-      <button type="button" class="btn btn-default">Wednesday</button>
-      <button type="button" class="btn btn-default">Thursday</button>
-      <button type="button" class="btn btn-default">Friday</button>
+    <div class="btn-group btn-group-lg btn-group-vertical" id="weekCal">
+      <button type="button" class="btn btn-default"><%= link_to "Monday, #{Date.today.beginning_of_week.to_formatted_s(:long)}", create_monday_path %></button>
+      <button type="button" class="btn btn-default"><%= link_to "Tuesday, #{Date.today.beginning_of_week.tomorrow.to_formatted_s(:long)}", create_tuesday_path %></button>
+      <button type="button" class="btn btn-default"><%= link_to "Wednesday, #{Date.today.beginning_of_week.tomorrow.tomorrow.to_formatted_s(:long)}", create_wednesday_path%></button>
+      <button type="button" class="btn btn-default"><%= link_to "Thursday, #{Date.today.beginning_of_week.tomorrow.tomorrow.tomorrow.to_formatted_s(:long)}", create_thursday_path%></button>
+      <button type="button" class="btn btn-default"><%= link_to "Friday, #{Date.today.beginning_of_week.tomorrow.tomorrow.tomorrow.tomorrow.to_formatted_s(:long)}", create_friday_path%></button>
     </div>
     </div>
 
-    <!-- Multiple Checkboxes -->
-    <div class="control-group" id="venueOptions">
-      <label class="control-label" for="checkboxes"><h2 class="venueLocationTitle">Clark Kerr</h2></label>
-      <div class="controls" id="menuItems">
-        <label class="checkbox" for="checkboxes-0">
-          <input type="checkbox" name="checkboxes" id="checkboxes-0" value="Option one">
-          Option one
-        </label>
-        <label class="checkbox" for="checkboxes-1">
-          <input type="checkbox" name="checkboxes" id="checkboxes-1" value="Option two">
-          Option two
-        </label>
-        <label class="checkbox" for="checkboxes-2">
-          <input type="checkbox" name="checkboxes" id="checkboxes-2" value="Option 3">
-          Option three
-        </label>
-        <label class="checkbox" for="checkboxes-3">
-          <input type="checkbox" name="checkboxes" id="checkboxes-3" value="Option 4">
-          Option four
-        </label>
-      </div>
-    </div>
+
 
   </fieldset>
 </form>

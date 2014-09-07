@@ -1,0 +1,24 @@
+<% @xroadBreakfast.each do |dinnerItem| %>
+
+    <div class="checkbox">
+      <label>
+        <input type="checkbox">
+        <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+            <%= dinnerItem["itemName"] %>
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><b>Calories: </b><%= dinnerItem["Calorie"] %></a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><b>Fat: </b><%= dinnerItem["Fat"] %></a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><b>Carb: </b><%= dinnerItem["Carb"] %></a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><b>Sodium: </b><%= dinnerItem["Sodium"] %></a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><b>Cholesterol: </b><%= dinnerItem["Cholesterol"] %></a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><b>Protein: </b><%= dinnerItem["Protein"] %></a></li>
+          </ul>
+        </div>
+      </label>
+    </div>
+<% end %>
+
+<button type="submit" class="btn btn-default">Submit</button>
